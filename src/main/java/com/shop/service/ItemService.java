@@ -62,8 +62,7 @@ public class ItemService {
 
         //이미지 등록
         for(int i=0;i<itemImgFileList.size();i++){
-            itemImgService.updateItemImg(itemImgIds.get(i),
-                    itemImgFileList.get(i));
+            itemImgService.updateItemImg(itemImgIds.get(i), itemImgFileList.get(i));
         }
 
         return item.getId();
